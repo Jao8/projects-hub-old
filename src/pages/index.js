@@ -11,6 +11,8 @@ import {
   HeaderPages, 
   HighlightBar, 
   HighlightBox, 
+  HighlightButton, 
+  HighlightButtonLabel, 
   HighlightDescripton, 
   HighlightTextsContainer, 
   HighlightTitle, 
@@ -64,28 +66,35 @@ function App() {
         </ProjectsContainerHeader>
         <ProjectsContainerHighlights>
           <HighlightBox barColor='#f42ebc'>
-            <HighlightBar></HighlightBar>
             <HighlightTextsContainer>
               <HighlightTitle><h4>Proj One</h4></HighlightTitle>
               <HighlightDescripton>Bacon ipsum dolor amet beef ribs tenderloin buffalo sirloin burgdoggen frankfurter filet mignon pancetta kevin beef, tail brisket ribeye ball tip. Short loin chislic sausage, biltong fatback pancetta jerky cow beef ribs t-bone swine pork loin. Chicken boudin shankle</HighlightDescripton>
             </HighlightTextsContainer>
+            <HighlightButton>
+                <HighlightButtonLabel>Saiba Mais</HighlightButtonLabel>
+            </HighlightButton>
           </HighlightBox>
           <HighlightBox barColor='#bcf42e'>
-            <HighlightBar></HighlightBar>
             <HighlightTextsContainer>
               <HighlightTitle><h4>Proj Two</h4></HighlightTitle>
               <HighlightDescripton>Bacon ipsum dolor amet beef ribs tenderloin buffalo sirloin burgdoggen frankfurter filet mignon pancetta kevin beef, tail brisket ribeye ball tip. Short loin chislic sausage, biltong fatback pancetta jerky cow beef ribs t-bone swine pork loin. Chicken boudin shankle</HighlightDescripton>
             </HighlightTextsContainer>
+            <HighlightButton>
+                <HighlightButtonLabel>Saiba Mais</HighlightButtonLabel>
+            </HighlightButton>
           </HighlightBox>
           <HighlightBox barColor='#2ef466'>
-            <HighlightBar></HighlightBar>
             <HighlightTextsContainer>
               <HighlightTitle><h4>Proj Three</h4></HighlightTitle>
               <HighlightDescripton>Bacon ipsum dolor amet beef ribs tenderloin buffalo sirloin burgdoggen frankfurter filet mignon pancetta kevin beef, tail brisket ribeye ball tip. Short loin chislic sausage, biltong fatback pancetta jerky cow beef ribs t-bone swine pork loin. Chicken boudin shankle</HighlightDescripton>
             </HighlightTextsContainer>
+            <HighlightButton>
+              <HighlightButtonLabel>Saiba Mais</HighlightButtonLabel>
+            </HighlightButton>
           </HighlightBox>
         </ProjectsContainerHighlights>
       </ProjectsContainer>
+      
     </Container>
   );
 }

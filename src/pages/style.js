@@ -1,15 +1,17 @@
 import styled from "styled-components/native";
 import LinearGradient from 'react-native-web-linear-gradient';
 
-
-
+var GlobalFontColor = '#E5E5E5';
+var BackgroundColor = '#1C2A34';
+var ButtonBorderColor = '#7CC9FF';
+var ForegroundColor = '#26363E';
 
 export const Container = styled.View`
   height: 100%;
   min-height: 100%;
 
   flex: 1;
-  background-color: #1c2a34;
+  background-color: ${BackgroundColor};
 `;
 
 export const Header = styled.View`
@@ -30,7 +32,7 @@ export const HeaderGreetings = styled.View`
 export const Name = styled.Text`
   margin-top: 2.15em;
   margin-left: 1.85em;
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
   
   font-size: 16px;
   font-weight: bold;
@@ -44,25 +46,25 @@ export const HeaderPages = styled.View`
 
 export const ProjectsLink = styled.Text`
   margin-right: 0.75em;
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
   font-size: 16px;
 `;
 
 export const AboutLink = styled.Text`
   margin-right: 0.75em;
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
   font-size: 16px;
 `;
 
 export const ContactButtonContainer = styled.View`
-  border: 0.2em solid #7CC9FF;
+  border: 0.2em solid ${ButtonBorderColor};
   border-radius: 6px;
   padding: 0.2em;
   font-size: 17px;
 `;
 
 export const ContactButtonLabel = styled.Text`
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
 `;
 
 export const IntroContainer = styled.View`
@@ -92,7 +94,7 @@ export const GradIntroTitle = styled(LinearGradient).attrs({
  `; 
 
 export const IntroText = styled.Text`
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
 
   margin-top: 1.65em;
   font-size: 18px;
@@ -120,7 +122,7 @@ export const ProjectsContainerHeader = styled.View`
 `;
 
 export const ProjectsTitle = styled.Text`
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
   font-size: 18px;
 `;
 
@@ -130,7 +132,7 @@ export const More = styled.View`
 `;
 
 export const MoreText = styled.Text`
-  color: #E5E5E5;
+  color: ${GlobalFontColor};
   font-size: 14px;
   font-weight: 600;
 `;
@@ -142,7 +144,7 @@ export const ProjectsContainerHighlights = styled.View`
 `;
 
 export const HighlightBox = styled.View`
-  background-color: #26363e;
+  background-color: ${ForegroundColor};
   margin: 0.7em 0.75em 0.7em 0.32em;
 
   border-left-color: ${props => props.barColor};
@@ -158,21 +160,41 @@ export const HighlightBar = styled.View`
 `;
 
 export const HighlightTextsContainer = styled.View`
-
+  margin-left: 0.9em;
+  padding-bottom: 2.75em;
+  margin-right: 5em;
 `;
 
 export const HighlightTitle = styled.Text`
-
+  font-weight: 600;
+  font-size: 16px;
+  color: ${GlobalFontColor};
 `;
 
 export const HighlightDescripton = styled.Text`
-
+  color: ${GlobalFontColor};
+  padding-left: 0.75em;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
 `;
 
 export const HighlightButton = styled.View`
-
+  border: 0.2em solid ${ButtonBorderColor};
+  border-radius: 6px;
+  padding: 0.2em;
+  margin-right: 87%;
+  margin-left: 0.9em;
+ margin-bottom: 1em;
 `;
 
 export const HighlightButtonLabel = styled.Text`
+  text-align: center;
+  font-weight: 500;
+  color: ${GlobalFontColor};
+`;
 
+export const Footer = styled.View`
+  
+  margin-top: 3rem;
 `;
